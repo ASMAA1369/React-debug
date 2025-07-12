@@ -2,7 +2,7 @@ import React from "react";
 
 function Child({ username, setUser }) {
   const handleClick = () => {
-    setUser("Albert");
+    setUser(prevName => (prevName === "Nikola" ? "Albert" : "Nikola"));
   };
 
   return (
